@@ -1,5 +1,8 @@
 package com.stefani.webhooks.controller;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -19,7 +22,7 @@ public class LogInterpreterControllerTest {
 	private LogReader logReader;
 	
 	@Test
-	public void deveExecutarChamadaDeExecucao() {
+	public void deveExecutarChamadaDeExecucao() throws IOException, URISyntaxException {
 
 		// when
 		controller.read();
