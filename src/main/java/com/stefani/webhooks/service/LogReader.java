@@ -7,7 +7,7 @@ public class LogReader {
 
 	public String read() {
 		// TODO Auto-generated method stub
-		return null;
+		return "teste";
 	}
 
 }
