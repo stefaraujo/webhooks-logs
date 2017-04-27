@@ -5,7 +5,7 @@ import java.util.List;
 public class LogDataInfo {
 	
 	private List<UrlRequested> urlData;
-	private List<StatusResponded> statusData;
+	private List<StatusCode> statusData;
 	
 	public List<UrlRequested> getUrlData() {
 		return urlData;
@@ -13,11 +13,11 @@ public class LogDataInfo {
 	public void setUrlData(List<UrlRequested> urlData) {
 		this.urlData = urlData;
 	}
-	public List<StatusResponded> getStatusData() {
+	public List<StatusCode> getStatusCode() {
 		return statusData;
 	}
-	public void setStatusData(List<StatusResponded> statusData) {
-		this.statusData = statusData;
+	public void setStatusCode(List<StatusCode> statusCode) {
+		this.statusData = statusCode;
 	}
 
 }

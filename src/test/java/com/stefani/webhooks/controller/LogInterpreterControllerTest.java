@@ -10,7 +10,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import com.stefani.webhooks.service.LogReader;
+import com.stefani.webhooks.service.LogInterpreter;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -19,7 +19,7 @@ public class LogInterpreterControllerTest {
 	@InjectMocks
 	private LogInterpreterController controller;
 	@Mock
-	private LogReader logReader;
+	private LogInterpreter logReader;
 	
 	@Test
 	public void deveExecutarChamadaDeExecucao() throws IOException, URISyntaxException {

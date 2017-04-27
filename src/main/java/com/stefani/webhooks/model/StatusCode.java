@@ -1,10 +1,14 @@
 package com.stefani.webhooks.model;
 
-public class StatusResponded {
+public class StatusCode {
 	
 	private String status;
 	private Integer quantity;
 	
+	public StatusCode(String string, Integer quantity) {
+		this.status = string;
+		this.quantity = quantity;
+	}
 	public String getStatus() {
 		return status;
 	}

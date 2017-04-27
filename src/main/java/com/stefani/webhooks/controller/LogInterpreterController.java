@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.stefani.webhooks.model.LogDataInfo;
-import com.stefani.webhooks.service.LogReader;
+import com.stefani.webhooks.service.LogInterpreter;
 
 /**
  * Endpoint responsável por receber requisição de inicio de interpretação de
@@ -23,7 +23,7 @@ import com.stefani.webhooks.service.LogReader;
 public class LogInterpreterController {
 
 	@Autowired
-	private LogReader logReader;
+	private LogInterpreter logReader;
 
 	@RequestMapping(value = "/read", method = RequestMethod.GET)
 	public LogDataInfo read() throws IOException, URISyntaxException {
